@@ -93,7 +93,7 @@ public class MenuTarea {
                     createFunction.execute();
                     createFunction.close();		
                     File directorio = new File(configuracion.getApp().getDirectory());
-                    String raiz=directorio.getParent()+directorio.getName();
+                    String raiz=directorio.getParent()+File.separator+directorio.getName();
                     String punto=raiz.replace(raiz,".");
                     crearFuncion(conn);
                     crearTrigger(conn);
